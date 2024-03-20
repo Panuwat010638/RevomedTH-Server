@@ -59,9 +59,9 @@ export default defineType({
         {name:'input',type: 'object',title:'Contact Input Placeholder & Button',
             fields: [
               {name: 'name', type: 'string', title: 'Name Input Placeholder'},
+              {name: 'lastname', type: 'string', title: 'Lastname Input Placeholder'},
               {name: 'email', type: 'string', title: 'Email Address Input Placeholder '},
               {name: 'tel', type: 'string', title: 'Telephone Number Input Placeholder'},
-              {name: 'product', type: 'string', title: 'Product Input Placeholder'},
               {name: 'message', type: 'string', title: 'Message Input Placeholder'},   
               {name: 'button', type: 'string', title: 'Form Button'},  
           ]},
