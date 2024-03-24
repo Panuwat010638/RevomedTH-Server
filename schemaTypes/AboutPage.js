@@ -11,7 +11,7 @@ export default defineType({
     fields: [
       defineField({
         name: 'banner',
-        title: 'Business Unit Page : Banner',
+        title: 'About Page : Banner',
         type: 'object',
         fields: [
           {name: 'images',
