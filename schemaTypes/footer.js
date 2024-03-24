@@ -44,8 +44,8 @@ export default defineType({
           {
           type: 'object',
           fields: [
-            {name: 'title', type: 'string', title: 'Navigation Bar Title'},
-            {name: 'href', type: 'string', title: 'Navigation Bar Href'},
+            {name: 'title', type: 'string', title: 'Footer Bar Title'},
+            {name: 'href', type: 'string', title: 'Footer Bar Href'},
             {
               name: 'status',
               title: 'Status On/Off',
