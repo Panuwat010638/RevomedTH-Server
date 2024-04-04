@@ -66,6 +66,14 @@ export const structure = (S) =>{
                       .title('English Page')
                       .filter('_type == "HomePage" && language->title == "en" ')
                   ),
+                  S.listItem()
+                  .title('CN')
+                  .schemaType('HomePage')
+                  .child(
+                    S.documentList()
+                      .title('China Page')
+                      .filter('_type == "HomePage" && language->title == "cn" ')
+                  ),
                 ]
               )
           ),  
@@ -145,7 +153,40 @@ export const structure = (S) =>{
                         ]
                       )
                   ),  
-                
+                  S.listItem()
+                  .title('CN')
+                  .child(
+                    S.list()
+                      .title('Page')
+                      .items(
+                        [
+                          S.listItem()
+                          .title('About Main')
+                          .schemaType('AboutPage')
+                          .child(
+                            S.documentList()
+                              .title('China Page')
+                              .filter('_type == "AboutPage" && language->title == "cn" ')
+                          ),
+                          S.listItem()
+                          .title('About CEO')
+                          .schemaType('AboutCEO')
+                          .child(
+                            S.documentList()
+                              .title('China Page')
+                              .filter('_type == "AboutCEO" && language->title == "cn" ')
+                          ),
+                          S.listItem()
+                          .title(' About Company')
+                          .schemaType('AboutCompany')
+                          .child(
+                            S.documentList()
+                              .title('China Page')
+                              .filter('_type == "AboutCompany" && language->title == "cn" ')
+                          ),
+                        ]
+                      )
+                  ),  
                 ]
               )
           ),    
@@ -172,6 +213,14 @@ export const structure = (S) =>{
                     S.documentList()
                       .title('English Page')
                       .filter('_type == "BusinessUnitPage" && language->title == "en" ')
+                  ),
+                  S.listItem()
+                  .title('CN')
+                  .schemaType('BusinessUnitPage')
+                  .child(
+                    S.documentList()
+                      .title('China Page')
+                      .filter('_type == "BusinessUnitPage" && language->title == "cn" ')
                   ),
                 ]
               )
@@ -200,6 +249,14 @@ export const structure = (S) =>{
                       .title('English Page')
                       .filter('_type == "InvestmentPage" && language->title == "en" ')
                   ),
+                  S.listItem()
+                  .title('CN')
+                  .schemaType('InvestmentPage')
+                  .child(
+                    S.documentList()
+                      .title('China Page')
+                      .filter('_type == "InvestmentPage" && language->title == "cn" ')
+                  ),
                 ]
               )
           ), 
@@ -226,6 +283,14 @@ export const structure = (S) =>{
                     S.documentList()
                       .title('English Page')
                       .filter('_type == "NewsPage" && language->title == "en" ')
+                  ),
+                  S.listItem()
+                  .title('CN')
+                  .schemaType('NewsPage')
+                  .child(
+                    S.documentList()
+                      .title('China Page')
+                      .filter('_type == "NewsPage" && language->title == "cn" ')
                   ),
                 ]
               )
@@ -254,6 +319,14 @@ export const structure = (S) =>{
                       .title('English Page')
                       .filter('_type == "CSRPage" && language->title == "en" ')
                   ),
+                  S.listItem()
+                  .title('CN')
+                  .schemaType('CSRPage')
+                  .child(
+                    S.documentList()
+                      .title('China Page')
+                      .filter('_type == "CSRPage" && language->title == "cn" ')
+                  ),
                 ]
               )
           ), 
@@ -280,6 +353,14 @@ export const structure = (S) =>{
                     S.documentList()
                       .title('English Page')
                       .filter('_type == "ContactPage" && language->title == "en" ')
+                  ),
+                  S.listItem()
+                  .title('CN')
+                  .schemaType('ContactPage')
+                  .child(
+                    S.documentList()
+                      .title('China Page')
+                      .filter('_type == "ContactPage" && language->title == "cn" ')
                   ),
                 ]
               )
@@ -308,6 +389,14 @@ export const structure = (S) =>{
                             .title('English Page')
                             .filter('_type == "navbar" && language->title == "en"')
                         ),
+                        S.listItem()
+                        .title('CN')
+                        .schemaType('navbar')
+                        .child(
+                          S.documentList()
+                            .title('China Page')
+                            .filter('_type == "navbar" && language->title == "cn"')
+                        ),
                       ]
                     )
                 ),
@@ -334,6 +423,14 @@ export const structure = (S) =>{
                           S.documentList()
                             .title('English Page')
                             .filter('_type == "footer" && language->title == "en"')
+                        ),
+                        S.listItem()
+                        .title('CN')
+                        .schemaType('footer')
+                        .child(
+                          S.documentList()
+                            .title('China Page')
+                            .filter('_type == "footer" && language->title == "cn"')
                         ),
                       ]
                     )
@@ -400,6 +497,14 @@ S.divider(),
                   S.documentList()
                     .title('English Page')
                     .filter('_type == "BusinessUnitContent" && language->title == "en"')
+                ),
+                S.listItem()
+                .title('CN')
+                .schemaType('BusinessUnitContent')
+                .child(
+                  S.documentList()
+                    .title('China Page')
+                    .filter('_type == "BusinessUnitContent" && language->title == "cn"')
                 ),
               ]
             )
