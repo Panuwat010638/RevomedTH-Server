@@ -15,7 +15,12 @@ export default defineType({
         type: 'object',
         fields: [
             {name: 'header', type: 'string', title: 'Main Header'},
-            {name: 'detail', type: 'text', title: 'Detail'},
+            {
+              name: 'body',
+              validation: Rule => Rule.required(),
+              title: 'Content',
+              type: 'blockContent',
+            },
             {
                 name: 'images',
                 title: 'CEO Image',
