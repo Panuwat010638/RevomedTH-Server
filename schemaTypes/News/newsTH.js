@@ -62,12 +62,13 @@ export default defineType({
     }),
     defineField({
       name: 'mainImage',
+      validation: Rule => Rule.required(),
       title: 'News Cover Image',
       type: 'object',
       fields: [
         {name: 'image', type: 'image', title: 'News Cover Image',description:'Image Size: 1440px x 400px',options: {
           hotspot: true,
-        }},
+        },validation: Rule => Rule.required(),},
         {name:"border",type:"boolean",title:"Include border around the image?",initialValue: false},
         {name: 'alt', type: 'string', title: 'Descriptive label for screen readers & SEO',description: '📌 Optional but highly encouraged to make the content more accessible',},
       ],

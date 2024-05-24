@@ -44,6 +44,7 @@ export default defineType({
     defineArrayMember({
       type: 'image',
       options: {hotspot: true},
+      validation: Rule => Rule.required(),
       fields: [
         {
           title: 'caption',

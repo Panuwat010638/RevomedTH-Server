@@ -62,10 +62,11 @@ export default defineType({
     }),
     defineField({
       name: 'mainImage',
+      validation: Rule => Rule.required(),
       title: 'News Cover Image',
       type: 'object',
       fields: [
-        {name: 'image', type: 'image', title: 'News Cover Image',description:'Image Size: 1440px x 400px',options: {
+        {validation: Rule => Rule.required(),name: 'image', type: 'image', title: 'News Cover Image',description:'Image Size: 1440px x 400px',options: {
           hotspot: true,
         }},
         {name:"border",type:"boolean",title:"Include border around the image?",initialValue: false},
