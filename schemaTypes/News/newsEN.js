@@ -30,7 +30,7 @@ export default defineType({
     }),
     defineField({
       name: 'slug',
-      title: 'Product Slug',
+      title: 'News Slug',
       type: 'object',
       validation: Rule => Rule.required(),
       fields: [

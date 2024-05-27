@@ -233,7 +233,7 @@ export default defineType({
     prepare(selection) {
       const {title, subtitle} = selection
       return {
-        title: `${title ? 'Product Page' : 'Footer Bar'}`,
+        title: `${title ? 'Footer Bar' : 'Footer Bar'}`,
         subtitle: `${subtitle ? `Publish at: ${subtitle}` : 'List Menu Footer Bar'}`
       }
     }
